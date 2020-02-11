@@ -1,0 +1,276 @@
+/*	CSS Global	*/
+html{
+	scroll-behavior: smooth;
+}
+*{
+	box-sizing: border-box;
+ }
+body{
+	margin: 0;
+	font-family: "Oswald", sans-serif;
+	background-color:lightgray;
+}
+img {
+	border-radius: 5px;
+}	
+
+/*
+	Menu e cabeçalho
+*/
+.cabecalho{
+	background-color: #333;	
+	height: 60px;
+	box-sizing: content-box;
+	color: #eee;
+}
+.tituloPagina {
+	display: inline-block;
+	height: 60px;
+	padding: 10px;
+	background-color: lightgray;
+	font-size: 18pt;
+	color: #111;
+}
+.menu{
+	display: inline-block;
+	vertical-align: top;
+	height: 60px;
+	padding: 18px;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	display: inline-block;
+}
+.cabecalho a{
+	text-decoration: none;
+	color: #eee;
+	font-size: 18pt;
+}
+.menu a{
+	padding: 4px;
+}
+.menu a:hover{
+	background-color: lightgray;
+	color: #111;
+}
+
+@media(max-width: 480px){ /*Comportamento do menu do Responsivo*/
+	.cabecalho{
+		height:150px;
+	}
+	.menu{
+		display: block;
+	}
+	.menu li{
+		display: inline-block;
+	}
+}
+/* 
+	Conteudo do Site
+*/
+/*
+	Primeira Section
+*/
+.grid1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.container img{
+	margin-top: 50px;
+}
+.fotoLivro{ /*Serve para todas as fotos*/
+	display: flex;
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+}    
+.tituloLivro { 
+	box-sizing: border-box;
+	flex-grow: 1;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+.titulo{
+	font-weight: bold;
+	font-size: 28pt;
+}
+.subTitulo{
+	font-size: 19pt;
+}
+.autor {
+	font-weight: bold;
+	font-size: 16pt;
+	font-style: italic;
+}
+.dadosCompra{
+	font-size: 17pt;
+}
+.compraPague{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 17pt;
+	flex-wrap: wrap;
+}
+.valor{
+	color: green;
+}
+.compre{
+	margin-left: 10px;
+	flex-grow: 1;
+	text-align:justify;
+	text-decoration: none;
+	color: #111;
+}
+.e-mail{
+	font-size: 20pt;
+	text-underline-position: auto;
+}
+.informacoesCompra{
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 100px;
+	text-align: justify;
+}
+
+@media(max-width: 480px){/*Comportamento da primeira section de produto do Responsivo*/
+	.grid1{
+		max-width: 100%;
+	}
+	.fotoLivro{
+		display: flex;
+		width: 200px;
+		height: 300px;
+		margin-left: 40px;
+	}
+	.tituloLivro{
+		display: flex;
+		flex-direction: column; 
+	}
+}
+]]
+/*
+	Segunda Section grid2 Sinopse
+*/
+.grid2{
+	box-sizing: border-box;
+}
+.tituloSection{ /*para todos os titulos das Section*/
+	font-size: 24pt;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+.barra{
+	width: calc(100% - 100px);
+	height: 2px;
+	margin-left: 20px;
+	background-color: #4F4F4F;
+}
+
+@media(max-width: 480px){ /*Comportanmento da barra abaixo dos titulos no responsivo*/
+	.barra{
+	width: calc(100% - 30px);
+	height: 2px;
+	margin-left: 20px;
+	background-color: #4F4F4F;
+}
+}
+.textoSinopse{
+	margin-left: 38px;
+	font-size: 16pt;
+	text-align: justify;
+	margin-right: 15px;
+}
+
+.textoSinopse ::first-letter {
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+/*
+	Terceira Section grid3 do Autor
+*/
+.containerAutor{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+.sobreAutor{
+	flex-grow:1;
+	width: 400px;
+	height: 500px;
+	font-size: 16pt;
+	text-align: justify;
+	margin-right: 10px;
+	background-color: #DCDCDC;
+	padding: 10px;
+	border-radius: 5px;
+}
+.sobreAutor ::first-letter {
+	font-size: 18pt;
+	font-weight: bold;
+}
+.munus{
+	font-weight: bold;
+}
+@media(max-width: 480px){/*Comportamento da terceira section sobre o Autor*/
+	.grid3{
+		max-width: 100%;
+	}
+	.fotoLivro img{
+		display: flex;
+		width: 200px;
+		height: 300px;
+	}
+	.sobreAutor{
+		margin-left: 38px;
+	}
+}
+/*
+	Quarta Section grid4 Descrição
+*/
+.containerDescriçao{
+	box-sizing: border-box;
+	margin-left: 38px;
+}
+.descriçoaItem{
+	display: flex;
+	flex-direction: column;
+}
+.tipoDescriçao{
+	width: calc(100% - 80px);
+	background-color: #DCDCDCDC;
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+b{
+	font-size: 14pt;
+}
+/*
+	Footer
+*/
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #333;	
+}
+footer{
+	color: #eee;
+	font-size: 18px;
+}
+.rodape{
+	padding: 10px;
+	margin:10px;
+	font-weight: bold;
+}
