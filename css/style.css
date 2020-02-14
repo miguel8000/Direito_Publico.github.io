@@ -165,7 +165,7 @@ img {
 	font-size: 24pt;
 	margin-top: 30px;
 	margin-left: 20px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 .barra{
 	width: calc(100% - 100px);
@@ -212,7 +212,6 @@ img {
 	font-size: 16pt;
 	text-align: justify;
 	margin-right: 10px;
-	background-color: #DCDCDC;
 	padding: 10px;
 	border-radius: 5px;
 }
