@@ -133,10 +133,12 @@ img {
 	text-underline-position: auto;
 }
 .informacoesCompra{
+	display: flex;
 	font-style: italic;
 	font-weight: bold;
 	margin-top: 100px;
 	text-align: justify;
+	margin-right: 20px;
 }
 
 @media(max-width: 480px){/*Comportamento da primeira section de produto do Responsivo*/
@@ -162,10 +164,10 @@ img {
 	box-sizing: border-box;
 }
 .tituloSection{ /*para todos os titulos das Section*/
+	display: flex;
 	font-size: 24pt;
 	margin-top: 30px;
 	margin-left: 20px;
-	margin-bottom: 20px;
 }
 .barra{
 	width: calc(100% - 100px);
@@ -193,7 +195,11 @@ img {
 	font-size: 18pt;
 	font-weight: bold;
 }
-
+@media(max-width: 335px){ /*para descer os titulos*/
+	.tituloSection{
+		margin-top: 20%;
+	}
+}
 /*
 	Terceira Section grid3 do Autor
 */
