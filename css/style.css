@@ -48,13 +48,16 @@ img {
 	text-decoration: none;
 	color: #eee;
 	font-size: 18pt;
+	transition: 0.5s;
 }
 .menu a{
+	margin-top: 5px;
 	padding: 4px;
 }
 .menu a:hover{
 	background-color: lightgray;
 	color: #111;
+	transition: 0.5s;
 }
 
 @media(max-width: 480px){ /*Comportamento do menu do Responsivo*/
