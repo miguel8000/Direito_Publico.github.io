@@ -62,7 +62,7 @@ img {
 
 @media(max-width: 480px){ /*Comportamento do menu do Responsivo*/
 	.cabecalho{
-		height:150px;
+		height:120px;
 	}
 	.menu{
 		display: block;
